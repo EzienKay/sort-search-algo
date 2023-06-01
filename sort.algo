@@ -1,0 +1,21 @@
+//Algorithm: InsertionSort
+
+ Function insertionSort(arr):
+     Let n be the length of arr
+     For i from 1 to n - 1 do:
+         Let key = arr[i]
+         Let j = i - 1
+         While j >= 0 and arr[j] > key do:
+             Set arr[j + 1] = arr[j]
+             Set j = j - 1
+         End While
+        Set arr[j + 1] = key
+    End For
+    Return arr
+ End Function
+
+ Let arr = an array of elements to be sorted
+
+ Call insertionSort(arr)
+
+ Print arr
